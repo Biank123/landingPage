@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './Banner.css';
 
+// Imágenes de ejemplo 
 const images = [
   'https://cdn.pixabay.com/photo/2023/05/17/13/38/lofoten-islands-8000196_1280.jpg',
   'https://cdn.pixabay.com/photo/2024/04/09/22/28/trees-8686902_1280.jpg',
   'https://cdn.pixabay.com/photo/2024/09/02/15/06/sunset-9017041_1280.jpg'
 ];
 
+// Títulos de ejemplo
 const titles = [
   'Descubre las Islas del Mundo',
   'Explora los Bosques del Mundo',
   'Contempla el Atardecer Perfecto'
 ];
 
+// Secciones de la página
 const sections = [
   '#section1',
   '#section2',
@@ -28,7 +31,7 @@ const Banner = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 4000); // cambian cada 4 segundos
 
-    return () => clearInterval(interval); // limpia el intervalo al desmontar
+    return () => clearInterval(interval); // limpia el intervalo 
   }, []);
 // Al hacer click en los botones redondos, cambia el índice al seleccionado:
   const handleDotClick = (index) => {

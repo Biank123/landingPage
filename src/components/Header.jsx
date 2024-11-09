@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
+        {/* Logo de ejemplo */}
         <img src="https://png.pngtree.com/png-clipart/20210516/original/pngtree-red-jasmine-flower-pictures-for-romantic-events-png-image_6276122.png" alt="Logo" />
       </div>
       <nav>
